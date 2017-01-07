@@ -85,10 +85,7 @@ const drawChart = (all) => {
        .text("GDP (Billion)");
 }
 
-axios.get('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json')
-  .then((response) => {
-    drawChart(response.data);
-  })
-  .catch((err) => {
-    console.warn('Error:' + err);
-  });
+d3.json('https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/GDP-data.json', (err, data) => {
+  if (err) return console.warn(err);
+  drawChart(data);
+});
