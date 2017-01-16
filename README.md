@@ -1,4 +1,4 @@
-Visualize Data with Bar Chart
+Visualize Data with Bar Chart 
 =====================
 
 [FCC's Visualize Data with Bar Chart project challenge](https://www.freecodecamp.com/challenges/visualize-data-with-a-bar-chart):
